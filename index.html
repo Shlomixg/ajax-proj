@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <link href="css/quote.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h2>Ajax</h2>
+    </header>
+    <main>
+        <section class="item answer">
+            <label>
+                Question:
+                <input type="text" placeholder="Type a question">
+            </label>
+            <button class="btn btn-answer" onclick="getAnswer()">
+                Answer Me!
+            </button>
+            <h4 class="answer"></h4>
+            <img class="answer-img" src="" />
+            <div class="bonus"></div>
+            <img class="bonus-dog" src="" />
+        </section>
+        <hr />
+        <section class="item contacts">
+            <h3>Contacts List</h3>
+            <ul class="contacts-list">
+            </ul>
+            <button class="btn-contacts" onclick="showContactsList()">Load List</button>
+        </section>
+        <hr />
+        <section class="item quote">
+            <h3>Quote</h3>
+            <blockquote class="quote-card">
+            </blockquote>
+            <button class="btn-contacts" onclick="loadQuote()">Make Me Wiser</button>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Copyrights 2018
+    </footer>
+    <!-- Lib scripts -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- User Scripts -->
+    <script src="js/axios-ex.js"></script>
+    <script src="js/fetch-ex.js"></script>
+    <script src="js/vanilla-ex.js"></script>
+</body>
+
+</html>
