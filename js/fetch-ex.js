@@ -2,7 +2,7 @@
 
 console.log('--- Fetch Ex ---');
 
-function showContactsList() {
+function loadContactsList() {
     var prm = fetch('http://www.filltext.com/?rows=12&fname=%7bfirstName%7d&lname=%7blastName%7d&tel=%7bphone|format%7d&address=%7bstreetAddress%7d&city=%7bcity%7d&zip=%7bzip%7d&pretty=true');
     prm.then(function(res) {
         var prmJson = res.json();

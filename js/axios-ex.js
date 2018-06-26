@@ -2,7 +2,7 @@
 
 console.log('--- Axios Ex ---');
 
-function getAnswer() {
+function loadAnswer() {
     var prm = axios.get('https://yesno.wtf/api');
     prm.then(function(res) {
         renderAnswer(res.data);
